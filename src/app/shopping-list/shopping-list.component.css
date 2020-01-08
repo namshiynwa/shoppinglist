@@ -1,0 +1,25 @@
+.itemSpacing
+{ margin-right : 50px;}
+
+.shopping-list{
+  background-color: lightgoldenrodyellow;
+}
+
+hr{
+  background-color:blue;
+}
+
+.itemtext{
+  width: 50%;
+  margin: 2% 2% 2% 0%;
+}
+
+.qtytext{
+  width: 10%;
+  margin: 2% 2% 2% 0%;
+}
+
+.unittext{
+  width: 10%;
+  margin: 2% 2% 2% 0%;
+}
