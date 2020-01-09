@@ -15,6 +15,9 @@ import { AdditemComponent } from './shopping-list/additem/additem.component';
 import { ListitemComponent } from './shopping-list/listitem/listitem.component';
 import { ShopSelectorComponent } from './shop-selector/shop-selector.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    BrowserAnimationsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
