@@ -1,15 +1,18 @@
-<div class="row h-100 justify-content-center align-items-center">
-  <div class="col-8">
-
-
-<select class="mdb-select md-form colorful-select dropdown-primary" multiple searchable="Search here..">
-  <option value="" disabled selected>Choose your country</option>
-  <option value="1">USA</option>
-  <option value="2">Germany</option>
-  <option value="3">France</option>
-  <option value="3">Poland</option>
-  <option value="3">Japan</option>
-</select>
-
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-6">
+    <form>
+      <mat-form-field class="FormFeild">
+        <input #shopInput (keyup)="0" matInput placeholder="Select Shop" aria-label="shop" [matAutocomplete]="auto" [formControl]="shopCtrl">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let shop of filteredShopes | async" [value]="shop.shopName">
+            
+            <span>{{ shop.shopName }}</span> |
+            <small>Location: {{shop.location}}</small>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
   </div>
+  <div class="col-3"></div>
 </div>
